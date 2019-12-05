@@ -1,0 +1,25 @@
+{
+  "name": "poc-lit-element",
+  "version": "1.0.0",
+  "description": "poc with lit-element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamtheolivetree/poc-lit-element.git"
+  },
+  "keywords": [
+    "lit-element",
+    "webcomponents",
+    "html",
+    "javascript"
+  ],
+  "author": "Lucas de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamtheolivetree/poc-lit-element/issues"
+  },
+  "homepage": "https://github.com/iamtheolivetree/poc-lit-element#readme"
+}
