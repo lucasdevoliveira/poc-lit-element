@@ -8,7 +8,7 @@ module.exports = {
   devServer: {
     contentBase: PATH.join(__dirname, PUBLIC_DIR),
     hot: true,
-    port: 3340
+    port: 3000
   },
   entry: PATH.resolve(__dirname, 'src', 'main.js'),
   mode: 'development',
