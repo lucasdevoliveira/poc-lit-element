@@ -1,16 +1,13 @@
-const HTML_WEBPACK_PLUGIN = require('html-webpack-plugin')
 const PATH = require('path')
 const webpack = require('webpack')
 
-const PUBLIC_DIR = 'public'
-
 module.exports = {
   devServer: {
-    contentBase: PATH.join(__dirname, PUBLIC_DIR),
+    contentBase: PATH.join(__dirname),
     hot: true,
     port: 3000
   },
-  entry: PATH.resolve(__dirname, 'src', 'main.js'),
+  entry: PATH.resolve(__dirname, 'index.js'),
   mode: 'development',
   module: {
     rules: [
@@ -42,13 +39,10 @@ module.exports = {
     ]
   },
   output: {
-    filename: '[name]-[hash].js',
-    path: PATH.resolve(__dirname, 'dist')
+    filename: 'index.js',
+    path: PATH.resolve(__dirname)
   },
   plugins: [
-    new HTML_WEBPACK_PLUGIN({
-      template: PATH.resolve(__dirname, PUBLIC_DIR, 'index.html')
-    }),
     new webpack.HotModuleReplacementPlugin()
   ],
   target: 'web'
