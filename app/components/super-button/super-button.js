@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { buttonStyles } from '../../styles/reset-styles.js';
+import { buttonStyles } from '../../styles/base/resets.js';
 
 class SuperButton extends LitElement {
   static get styles() {

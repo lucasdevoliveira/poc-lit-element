@@ -2,8 +2,7 @@ import { LitElement, html, css } from 'lit-element'
 import '../../components/super-header/super-header.js'
 import '../../components/super-input/super-input.js'
 import '../../components/super-button/super-button.js'
-import '../../styles/reset-styles.js'
-import { buttonStyles } from '../../styles/reset-styles.js';
+import { buttonStyles } from '../../styles/base/resets.js';
 
 class AccountPage extends LitElement {
   static get styles() {
@@ -36,7 +35,7 @@ class AccountPage extends LitElement {
           border: solid 1px #dddddd;
           margin: 15px 0 0 0;
         }
-        .text-bold {
+        .text-bold  {
           font-weight: bold;
           color: #50525f;
         }

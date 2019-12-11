@@ -38,7 +38,7 @@ class SuperHeader extends LitElement {
             <path fill="#0083FF" fill-rule="nonzero" d="M20 11v2H7.8l5.6 5.6L12 20l-8-8 8-8 1.4 1.4L7.8 11z"/>
           </svg>
         </div>
-        <img width="85" src="../../app/images/logo.svg">
+        <img alt="Logo da Sympla" width="85" src="../../app/images/logo.svg">
       </header>
     `;
   }
