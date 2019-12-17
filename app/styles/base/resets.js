@@ -1,9 +1,12 @@
 import { css } from 'lit-element';
 
-export const buttonStyles = css`
+export const resets = css`
   :host {
     display: block;
     font-family: 'Open Sans', sans-serif;
+  }
+  main {
+    padding: 0 26px;
   }
   h1 {
     margin: 20px 0 0 0;
