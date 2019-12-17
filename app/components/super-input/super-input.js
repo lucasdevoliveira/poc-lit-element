@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { resets } from '../../styles/base/resets.js';
+import { resets } from '../../styles/base/resets';
 
 class SuperInput extends LitElement {
   static get styles() {
@@ -19,7 +19,6 @@ class SuperInput extends LitElement {
         input {
           width: 100%;
           border: 0;
-
         }
       `
     ];
@@ -29,17 +28,13 @@ class SuperInput extends LitElement {
     return {
       type: String,
       placeholder: String
-    }
+    };
   }
 
-  constructor() {
-    super();
-  }
-  
   render() {
     return html`
       <div class="container">
-        <input type=${this.type} placeholder=${this.placeholder}>
+        <input type=${this.type} placeholder=${this.placeholder} />
       </div>
     `;
   }

@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { resets } from '../../styles/base/resets.js';
+import { resets } from '../../styles/base/resets';
 
 class SuperButton extends LitElement {
   static get styles() {
@@ -11,7 +11,7 @@ class SuperButton extends LitElement {
         }
         :host([facebook]) button {
           background: #3b5998;
-        } 
+        }
 
         button {
           width: 100%;
@@ -30,13 +30,9 @@ class SuperButton extends LitElement {
   static get properties() {
     return {
       value: String
-    }
+    };
   }
 
-  constructor() {
-    super();
-  }
-  
   render() {
     return html`
       <button>${this.value}</button>

@@ -1,5 +1,5 @@
-const PATH = require('path')
-const webpack = require('webpack')
+const PATH = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   devServer: {
@@ -32,8 +32,6 @@ module.exports = {
     filename: 'index.js',
     path: PATH.resolve(__dirname)
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   target: 'web'
-}
+};

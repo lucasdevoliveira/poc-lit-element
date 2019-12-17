@@ -32,3 +32,4 @@ export const resets = css`
   }
 `;
 
+export default resets;

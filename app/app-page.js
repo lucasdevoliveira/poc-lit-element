@@ -1,10 +1,10 @@
 import { LitElement, html, css } from 'lit-element';
-import './pages/account-page/account-page.js'; 
+import './pages/account-page/account-page';
 
 class AppPage extends LitElement {
-  static get styles () {
+  static get styles() {
     return [
-      css `
+      css`
         * {
           margin: 0px;
           padding: 0px;
@@ -21,11 +21,7 @@ class AppPage extends LitElement {
       active: {
         type: Boolean
       }
-    }
-  }
-
-  constructor() {      
-    super();
+    };
   }
 
   render() {

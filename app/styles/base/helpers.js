@@ -24,7 +24,7 @@ export const helpers = css`
     border: solid 1px #dddddd;
     margin: 15px 0 0 0;
   }
-  .text-bold  {
+  .text-bold {
     font-weight: bold;
     color: #50525f;
   }
@@ -35,3 +35,5 @@ export const helpers = css`
     margin: 15px 0 0 0;
   }
 `;
+
+export default helpers;

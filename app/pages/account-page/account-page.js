@@ -1,22 +1,15 @@
-import { LitElement, html, css } from 'lit-element'
-import '../../components/super-header/super-header.js'
-import '../../components/super-input/super-input.js'
-import '../../components/super-button/super-button.js'
-import { resets } from '../../styles/base/resets.js';
-import { helpers } from '../../styles/base/helpers.js';
+import { LitElement, html } from 'lit-element';
+import '../../components/super-header/super-header';
+import '../../components/super-input/super-input';
+import '../../components/super-button/super-button';
+import { resets } from '../../styles/base/resets';
+import { helpers } from '../../styles/base/helpers';
 
 class AccountPage extends LitElement {
   static get styles() {
-    return [
-      resets,
-      helpers
-    ];
+    return [resets, helpers];
   }
 
-  constructor() {
-    super();
-  }
-  
   render() {
     return html`
       <super-header></super-header>
@@ -25,29 +18,20 @@ class AccountPage extends LitElement {
         <p class="text-center">Atenção: um e-mail válido é a garantia de acesso aos seus ingressos.</p>
         <super-button facebook value="ACESSAR COM FACEBOOK"></super-button>
         <div class="separator">
-          <hr>
+          <hr />
           <p>OU</p>
-          <hr>
+          <hr />
         </div>
-        <super-input 
-          type="text"
-          placeholder="Nome completo">
-        </super-input>
-        <super-input 
-          type="text"
-          placeholder="Senha">
-        </super-input>
-        <super-input 
-          type="text"
-          placeholder="E-mail">
-        </super-input>
-        <super-input 
-          type="text"
-          placeholder="Confirmar E-mail">
-        </super-input>
+        <super-input type="text" placeholder="Nome completo"></super-input>
+        <super-input type="text" placeholder="Senha"></super-input>
+        <super-input type="text" placeholder="E-mail"></super-input>
+        <super-input type="text" placeholder="Confirmar E-mail"></super-input>
         <super-button value="CADASTRAR"></super-button>
-        <p class="text-center text-privacity">Ao me cadastrar, concordo com os <a href="#">Termos de uso</a> e <a href="#">Política de Privacidade</a> da Sympla.</p>
-        <hr class="separator-2">
+        <p class="text-center text-privacity">
+          Ao me cadastrar, concordo com os <a href="#">Termos de uso</a> e <a href="#">Política de Privacidade</a> da
+          Sympla.
+        </p>
+        <hr class="separator-2" />
         <p class="text-has-account text-center text-bold">Já possui uma conta? <a href="#">Faça login!</a></p>
       </main>
     `;
