@@ -36,6 +36,8 @@
     "lit-html": "^1.1.2",
     "prettier": "^1.19.1",
     "style-loader": "^1.0.1",
+    "stylelint-config-prettier": "^8.0.0",
+    "stylelint-prettier": "^1.1.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
