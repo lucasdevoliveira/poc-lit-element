@@ -4,7 +4,9 @@
   "description": "poc with lit-element",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "lint": "npm run lint:js",
+    "lint:js": "eslint --ext .html,.js index.js index.html app"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,11 @@
     "@webcomponents/webcomponentsjs": "^2.4.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.1.2",
     "html-webpack-plugin": "^3.2.0",
     "lit-element": "^2.2.1",
