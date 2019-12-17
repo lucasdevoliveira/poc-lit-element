@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --ext .html,.js index.js index.html app",
     "lint:css": "stylelint index.js \"app/**/*.js\""
   },
