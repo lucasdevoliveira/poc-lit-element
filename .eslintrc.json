@@ -13,6 +13,14 @@
         "singleQuote": true,
         "printWidth": 120
       }
+    ],
+    "class-methods-use-this": [
+      "error",
+      {
+        "exceptMethods": [
+          "render"
+        ]
+      }
     ]
   },
   "env": {
